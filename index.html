@@ -1,1 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杨金龙 (Jinlong Yang) | AI Infra & 算法优化</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 全局基础样式 */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --link-color: #0366d6;
+            --border-color: #eaeaea;
+            --muted-color: #666666;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 800px; /* 限制阅读宽度，增强学术感 */
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        h1, h2, h3 { color: #000; margin-top: 2rem; }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; margin-top: 1rem; }
+        h2 { font-size: 1.5rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        a { color: var(--link-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        
+        /* 头部信息 */
+        .header { margin-bottom: 2.5rem; }
+        .contact-info { margin-top: 1rem; font-size: 1rem; color: var(--muted-color); }
+        .contact-info a { margin-right: 15px; color: var(--muted-color); }
+        .contact-info a:hover { color: var(--link-color); }
+        
+        /* 列表与卡片样式 */
+        .item-title { font-weight: bold; font-size: 1.1rem; }
+        .item-meta { color: var(--muted-color); font-size: 0.95rem; margin-bottom: 0.5rem; display: flex; justify-content: space-between; }
+        .content-list { padding-left: 1.5rem; margin-top: 0.5rem; }
+        .content-list li { margin-bottom: 0.4rem; }
+        
+        /* 论文列表特殊样式 */
+        .pub-list li { margin-bottom: 1rem; list-style-type: square; }
+        .author-me { font-weight: bold; }
+        
+        /* 技能标签 */
+        .skills-container p { margin: 0.5rem 0; }
+        .skill-category { font-weight: bold; display: inline-block; width: 90px; }
+        
+        /* 移动端适配 */
+        @media (max-width: 600px) {
+            .item-meta { flex-direction: column; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
 
+    <header class="header">
+        <h1>杨金龙 (Jinlong Yang)</h1>
+        <p style="font-size: 1.2rem; margin: 0.5rem 0;">AI 基础设施 | AIGC 模型推理优化研发实习生</p>
+        <div class="contact-info">
+            <a href="mailto:3324694644@qq.com"><i class="fa-solid fa-envelope"></i> 3324694644@qq.com</a>
+            <a href="https://github.com/your-github-username" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <span><i class="fa-solid fa-phone"></i> 189-7551-7093</span>
+        </div>
+    </header>
+
+    <section id="education">
+        <h2><i class="fa-solid fa-graduation-cap"></i> 教育背景</h2>
+        <div class="item">
+            <div class="item-meta">
+                <span class="item-title">四川大学 (985)</span>
+                <span>2023.09 – 2027.06</span>
+            </div>
+            <div>软件工程 | 本科生 | <strong>GPA: 3.6/4.0</strong></div>
+            <ul class="content-list">
+                <li><strong>专业核心课程：</strong>机器学习、数据挖掘、计算机体系结构、操作系统、数据结构与算法等</li>
+                <li><strong>数学基础：</strong>微积分(88), 线性代数(94), 概率论(100), 离散数学(92)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2><i class="fa-solid fa-book-open"></i> 学术成果</h2>
+        <ul class="pub-list content-list">
+            <li>
+                <strong>[First Author]</strong> "BRACE: Taming Sharp Irregularities via Barycentric Rational Forecasting for Fast Diffusion Transformers Inference"<br>
+                <em>Submitted to ACM Multimedia 2026</em>
+            </li>
+            <li>
+                <strong>[First Author]</strong> "FADE: Fractional Anomalous Dynamics Extrapolation for Accelerating Diffusion Transformers"<br>
+                <em>In Preparation</em>
+            </li>
+            <li>
+                <strong>[Co-Author]</strong> "Topology-Aware Graph-Conditioned Diffusion Model for Sparse RIR Prediction"<br>
+                <em>Submitted to ACM Multimedia 2026</em>
+            </li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2><i class="fa-solid fa-code-branch"></i> 核心项目与科研经历</h2>
+        
+        <div class="item" style="margin-bottom: 1.5rem;">
+            <div class="item-meta">
+                <span class="item-title">Diffusion Cache Accelerate</span>
+                <span>2025.11 – 至今</span>
+            </div>
+            <ul class="content-list">
+                <li><strong>项目背景：</strong>针对 FLUX.1 等大规模扩散模型在长步长推理时，特征缓存极易引发几何畸变与发散的痛点，分别从<strong>预测方式</strong>与<strong>物理建模</strong>角度主导研发了两套无训练推理加速框架，并产出两篇学术论文。</li>
+                <li><strong>BRACE 框架（预测方式创新）：</strong>提出“特征驱动”的有理预测范式，摒弃极易发散的传统“导数驱动”局部估计，利用高表达能力的自适应有理外推机制，有效平抑长步长高阶震荡，解决特征轨迹的突变问题。</li>
+                <li><strong>FADE 框架（物理建模创新）：</strong>提出受物理启发的反常动力学预测框架。通过连续化算子创新，赋予特征预测模型处理高维复杂曲率的原生能力，从根本上克服大步长外推崩塌。</li>
+                <li><strong>性能与工程落地：</strong>算法以轻量级插件形式无缝集成于主流 DiT 生态。在保持极高生成保真度（SOTA）的前提下，实现端到端推理 FLOPs 近 4-5 倍的显著降低，在激进的跳步间隔下依然保持稳定。</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-meta">
+                <span class="item-title">TinyTorch (个人开源学习项目)</span>
+                <span>2026.02 – 至今</span>
+            </div>
+            <ul class="content-list">
+                <li><strong>核心框架全栈实现：</strong>基于 NumPy 从零构建轻量级深度学习框架，完整实现张量管理系统、自动微分引擎、数据加载器、端到端训练循环；并复现 CNN、Transformer 等核心神经架构。</li>
+                <li><strong>生产级优化专项实践：</strong>深入学习并实践 MLSys 核心优化思想，覆盖性能基准测试、模型量化、模型压缩、KV 缓存推理加速等工业界主流推理优化技术。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2><i class="fa-solid fa-screwdriver-wrench"></i> 专业技能</h2>
+        <div class="skills-container">
+            <p><span class="skill-category">编程语言:</span> 熟练掌握 Python，熟悉 C/C++，SQL</p>
+            <p><span class="skill-category">深度学习:</span> 熟练使用 PyTorch 生态，熟悉模型底层架构，了解主流推理优化与加速方案</p>
+            <p><span class="skill-category">算法理论:</span> 深入理解扩散模型 (DiT, FLUX)，具备扎实的数值分析基础</p>
+            <p><span class="skill-category">开发工具:</span> 熟练使用 Git, Linux/Shell, CMake, Docker, LaTeX</p>
+        </div>
+    </section>
+
+    <footer style="margin-top: 3rem; text-align: center; color: var(--muted-color); font-size: 0.9rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+        <p>&copy; 2026 Jinlong Yang. Powered by GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
