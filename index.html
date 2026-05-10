@@ -3,115 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jinlong Yang | AI Infrastructure & Inference Optimization</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>JinLong Yang - Resume</title>
     <style>
-        /* Base Styles */
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #333333;
-            --link-color: #0366d6;
-            --border-color: #eaeaea;
-            --muted-color: #666666;
-        }
+        /* 基础样式：学术极简风 */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: 'Times New Roman', Times, serif; /* 学术界常用的衬线字体 */
             line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            max-width: 800px;
+            color: #222;
+            max-width: 850px;
             margin: 0 auto;
-            padding: 2rem 1.5rem;
+            padding: 40px 20px;
+            background-color: #fff;
         }
-        h1, h2, h3 { color: #000; margin-top: 2rem; }
-        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; margin-top: 1rem; }
-        h2 { font-size: 1.5rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
-        a { color: var(--link-color); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        
-        /* Header */
-        .header { margin-bottom: 2.5rem; }
-        .contact-info { margin-top: 1rem; font-size: 1rem; color: var(--muted-color); }
-        .contact-info a { margin-right: 15px; color: var(--muted-color); }
-        .contact-info a:hover { color: var(--link-color); }
-        .contact-info span { margin-right: 15px; }
-        
-        /* Lists & Cards */
-        .item { margin-bottom: 1.5rem; }
-        .item-title { font-weight: bold; font-size: 1.1rem; }
-        .item-meta { color: var(--muted-color); font-size: 0.95rem; margin-bottom: 0.2rem; display: flex; justify-content: space-between; }
-        .content-list { padding-left: 1.5rem; margin-top: 0.5rem; }
-        .content-list li { margin-bottom: 0.4rem; }
-        
-        /* Publications */
-        .pub-list li { margin-bottom: 1rem; list-style-type: square; }
-        
-        /* Skills */
-        .skills-container p { margin: 0.5rem 0; }
-        .skill-category { font-weight: bold; display: inline-block; width: 180px; }
-        
-        /* Responsive */
-        @media (max-width: 600px) {
-            .item-meta { flex-direction: column; }
-            h1 { font-size: 2rem; }
-            .skill-category { width: 100%; display: block; margin-bottom: 0.2rem; }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.3em;
+            text-transform: uppercase;
+            border-bottom: 1.5px solid #222;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        /* 联系方式 */
+        .contact-info {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        .contact-info a {
+            color: #0044cc;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .separator {
+            margin: 0 8px;
+            color: #666;
+        }
+
+        /* 布局辅助 */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        /* 教育背景 */
+        .school-name {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .date {
+            font-style: italic;
+            color: #444;
+        }
+        .degree-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .courses {
+            font-size: 0.95em;
+            color: #444;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* 项目/科研经历 */
+        .project-title {
+            font-weight: bold;
+            font-size: 1.05em;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .research-list {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        .research-list li {
+            margin-bottom: 8px;
+            text-align: justify;
+        }
+        .highlight {
+            font-style: italic;
+            color: #333;
+        }
+
+        /* 技能列表 */
+        .skills-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .skills-list li {
+            margin-bottom: 8px;
         }
     </style>
 </head>
 <body>
 
-    <header class="header">
-        <h1>Jinlong Yang</h1>
-        <p style="font-size: 1.2rem; margin: 0.5rem 0;">AI Infrastructure | AIGC Model Inference Optimization R&D Intern</p>
+    <header>
+        <h1>JinLong Yang</h1>
         <div class="contact-info">
-            <a href="mailto:3324694644@qq.com"><i class="fa-solid fa-envelope"></i> 3324694644@qq.com</a>
-            <a href="https://github.com/your-github-username" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-            <span><i class="fa-solid fa-phone"></i> (+86) 189-7551-7093</span>
+            <a href="mailto:2023141461083@stu.scu.edu.cn">2023141461083@stu.scu.edu.cn</a>
+            <span class="separator">&bull;</span>
+            <span>+86 189 7551 7093</span>
+            <!-- 如果有 GitHub 或个人主页链接，可以取消下面的注释并替换链接 -->
+            <!--
+            <span class="separator">&bull;</span>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            -->
         </div>
     </header>
 
     <section id="education">
-        <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
-        <div class="item">
-            <div class="item-meta">
-                <span class="item-title">Sichuan University (Project 985)</span>
-                <span>Sep 2023 – Jun 2027</span>
+        <h2>Education</h2>
+        <div class="flex-container">
+            <span class="school-name">Sichuan University</span>
+            <span class="date">2023.09 &ndash; 2027.06</span>
+        </div>
+        <div class="degree-info">
+            <span>B.Eng. in Software Engineering</span>
+            <span><strong>GPA:</strong> 3.6/4.0</span>
+        </div>
+        <div class="courses">
+            <span>Programming (92)</span>
+            <span>Discrete Mathematics (92)</span>
+            <span>Probability and Statistics (100)</span>
+            <span>Linear Algebra (94)</span>
+        </div>
+    </section>
+
+    <section id="research-experience">
+        <h2>Research Experience</h2>
+
+        <div class="project">
+            <div class="project-title">
+                BRACE: Taming Sharp Irregularities via Barycentric Rational Forecasting for Fast DiT Inference
             </div>
-            <div>B.Eng. in Software Engineering | <strong>GPA: 3.6/4.0</strong></div>
-            <ul class="content-list">
-                <li><strong>Core Courses:</strong> Machine Learning, Data Mining, Computer Architecture, Operating Systems, Data Structures & Algorithms.</li>
-                <li><strong>Mathematics Foundation:</strong> Calculus (88), Linear Algebra (94), Probability Theory (100), Discrete Mathematics (92).</li>
+            <ul class="research-list">
+                <li>Proposed BRACE, a training-free acceleration framework for Diffusion Transformers, to address the high inference cost of DiT models and the instability of existing long-step prediction methods. By combining a local sliding window, barycentric rational extrapolation, and adaptive Chebyshev weighting, BRACE achieved quality-efficiency trade-off than prior methods on DiT-XL/2, FLUX.1-dev, and HunyuanVideo.</li>
+                <li class="highlight">First-author paper submitted to ACM MM 2026.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title">
+                FADE: Fractional Anomalous Dynamics Extrapolation for Diffusion Transformers Acceleration
+            </div>
+            <ul class="research-list">
+                <li>By characterizing DiT latent trajectories as anomalous diffusion, FADE utilizes a Mittag-Leffler fractional operator to capture complex feature evolution. This overcomes the limitations of traditional integer-order operators under high-curvature dynamics, enabling accurate extrapolation of non-linear trajectories while mitigating error accumulation. Furthermore, by exploiting the cross-sample stability of these dynamics, we construct a multi-dimensional Look-Up Table (LUT) to achieve zero-overhead, spatiotemporally adaptive parameter retrieval.</li>
+                <li class="highlight">First-author paper submitted to NeurIPS 2026.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title">
+                HDS: Heterogeneity-Driven Safeguarding for Structure-Aware DiT Acceleration
+            </div>
+            <ul class="research-list">
+                <li>Proposed the HDS framework to overcome homogeneous layer assumptions in DiT acceleration. By profiling inter-layer sensitivity online via a novel Heterogeneity Score (HS), HDS selectively safeguards vulnerable layers while accelerating robust ones, improving the fidelity-efficiency Pareto frontier with negligible overhead.</li>
+                <li class="highlight">Co-first-author paper submitted to NeurIPS 2026.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title">
+                GRAD-RIR: Topology-Aware Graph-Conditioned Diffusion Model for Sparse RIR Prediction
+            </div>
+            <ul class="research-list">
+                <li>Studied real room RIR estimation under sparse measurements, geometric occlusion, and strong spatial variation. Constructed a topological relational graph to model spatial constraints, incorporated visual cues to capture complex patterns, and designed a conditional generative framework for RIR reconstruction, improving estimation accuracy and spatial generalization with SOTA results on multiple acoustic metrics.</li>
+                <li class="highlight">Co-first-author paper submitted to ACM MM 2026.</li>
             </ul>
         </div>
     </section>
 
-    <section id="publications">
-        <h2><i class="fa-solid fa-book-open"></i> Publications</h2>
-        <ul class="pub-list content-list">
-            <li>
-                <strong>[First Author]</strong> "BRACE: Taming Sharp Irregularities via Barycentric Rational Forecasting for Fast Diffusion Transformers Inference"<br>
-                <em>Submitted to ACM Multimedia 2026</em>
-            </li>
-            <li>
-                <strong>[Co-Author]</strong> "Topology-Aware Graph-Conditioned Diffusion Model for Sparse RIR Prediction"<br>
-                <em>Submitted to ACM Multimedia 2026</em>
-            </li>
+    <section id="technical-skills">
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+            <li><strong>Programming:</strong> Python, C/C++, PyTorch, Linux, Git.</li>
+            <li><strong>English:</strong> CET-4: 568 | CET-6: 520.</li>
         </ul>
     </section>
-
-    <section id="skills">
-        <h2><i class="fa-solid fa-screwdriver-wrench"></i> Technical Skills</h2>
-        <div class="skills-container">
-            <p><span class="skill-category">Programming Languages:</span> Proficient in Python; Familiar with C/C++, SQL.</p>
-            <p><span class="skill-category">Deep Learning:</span> Proficient in the PyTorch ecosystem; Familiar with underlying model architectures; Knowledgeable about mainstream inference optimization and acceleration schemes.</p>
-            <p><span class="skill-category">Algorithm Theory:</span> Deep understanding of diffusion models (DiT, FLUX); Solid foundation in numerical analysis.</p>
-            <p><span class="skill-category">Tools & Utilities:</span> Git, Linux/Shell, CMake, Docker, LaTeX (Proficient in drafting high-quality academic papers).</p>
-        </div>
-    </section>
-
-    <footer style="margin-top: 3rem; text-align: center; color: var(--muted-color); font-size: 0.9rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
-        <p>&copy; 2026 Jinlong Yang. Powered by GitHub Pages.</p>
-    </footer>
 
 </body>
 </html>
