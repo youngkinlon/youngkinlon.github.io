@@ -6,6 +6,7 @@
   <meta name="description" content="JinLong Yang — undergraduate researcher at Sichuan University working on efficient diffusion models and long video generation.">
   <meta name="theme-color" content="#ffffff">
   <title>JinLong Yang</title>
+
   <style>
     :root {
       --ink: #202124;
@@ -35,10 +36,21 @@
       text-underline-offset: 3px;
     }
 
-    a:hover, a:focus-visible { text-decoration: underline; }
-    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+    a:hover,
+    a:focus-visible {
+      text-decoration: underline;
+    }
 
-    .page { width: min(100% - 40px, 820px); margin: 0 auto; }
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .page {
+      width: min(100% - 40px, 820px);
+      margin: 0 auto;
+    }
 
     .site-header {
       display: flex;
@@ -58,10 +70,28 @@
       letter-spacing: -.025em;
     }
 
-    .identity p { margin: 0; color: var(--muted); font-size: .95rem; }
-    .site-nav { display: flex; gap: 20px; padding-bottom: 3px; font-size: .92rem; white-space: nowrap; }
-    main { padding: 16px 0 64px; }
-    section { padding-top: 38px; scroll-margin-top: 18px; }
+    .identity p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .site-nav {
+      display: flex;
+      gap: 20px;
+      padding-bottom: 3px;
+      font-size: .92rem;
+      white-space: nowrap;
+    }
+
+    main {
+      padding: 16px 0 64px;
+    }
+
+    section {
+      padding-top: 38px;
+      scroll-margin-top: 18px;
+    }
 
     h2 {
       margin: 0 0 15px;
@@ -71,8 +101,13 @@
       letter-spacing: -.01em;
     }
 
-    .bio { max-width: 750px; }
-    .bio p { margin: 0 0 12px; }
+    .bio {
+      max-width: 750px;
+    }
+
+    .bio p {
+      margin: 0 0 12px;
+    }
 
     .contact-links {
       display: flex;
@@ -82,11 +117,26 @@
       font-size: .94rem;
     }
 
-    .contact-links a::after { content: "\2197"; margin-left: 4px; font-size: .75em; }
-    .contact-links a[href^="mailto"]::after { content: ""; }
-    .paper-list { display: grid; gap: 29px; }
+    .contact-links a::after {
+      content: "\2197";
+      margin-left: 4px;
+      font-size: .75em;
+    }
 
-    .paper { position: relative; padding-left: 18px; }
+    .contact-links a[href^="mailto"]::after {
+      content: "";
+    }
+
+    .paper-list {
+      display: grid;
+      gap: 29px;
+    }
+
+    .paper {
+      position: relative;
+      padding-left: 18px;
+    }
+
     .paper::before {
       content: "";
       position: absolute;
@@ -97,7 +147,10 @@
       border-radius: 2px;
       background: var(--line);
     }
-    .paper.publication::before { background: var(--accent); }
+
+    .paper.publication::before {
+      background: var(--accent);
+    }
 
     .paper-title {
       margin: 0 0 4px;
@@ -107,13 +160,39 @@
       line-height: 1.45;
     }
 
-    .paper-authors, .paper-venue, .paper-summary { margin: 0; }
-    .paper-authors { color: var(--muted); font-size: .93rem; }
-    .paper-venue { margin-top: 2px; font-size: .94rem; font-style: italic; }
-    .paper-summary { max-width: 750px; margin-top: 8px; color: #45484d; font-size: .94rem; }
-    .paper-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .paper-authors,
+    .paper-venue,
+    .paper-summary {
+      margin: 0;
+    }
 
-    .paper-links a, .status {
+    .paper-authors {
+      color: var(--muted);
+      font-size: .93rem;
+    }
+
+    .paper-venue {
+      margin-top: 2px;
+      font-size: .94rem;
+      font-style: italic;
+    }
+
+    .paper-summary {
+      max-width: 750px;
+      margin-top: 8px;
+      color: #45484d;
+      font-size: .94rem;
+    }
+
+    .paper-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .paper-links a,
+    .status {
       display: inline-flex;
       align-items: center;
       min-height: 27px;
@@ -126,28 +205,70 @@
       line-height: 1.4;
     }
 
-    .paper-links a:hover { background: #e2eef8; text-decoration: none; }
-    .status { margin-left: 7px; border-color: var(--line); color: var(--muted); background: #f7f7f7; vertical-align: 2px; }
-    footer { padding: 22px 0 38px; border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
-
-    @media (max-width: 620px) {
-      .page { width: min(100% - 30px, 820px); }
-      .site-header { align-items: flex-start; flex-direction: column; gap: 19px; padding-top: 38px; }
-      .site-nav { width: 100%; gap: 18px; overflow-x: auto; }
-      main { padding-bottom: 50px; }
-      section { padding-top: 31px; }
+    .paper-links a:hover {
+      background: #e2eef8;
+      text-decoration: none;
     }
 
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    .status {
+      margin-left: 7px;
+      border-color: var(--line);
+      color: var(--muted);
+      background: #f7f7f7;
+      vertical-align: 2px;
+    }
+
+    footer {
+      padding: 22px 0 38px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .82rem;
+    }
+
+    @media (max-width: 620px) {
+      .page {
+        width: min(100% - 30px, 820px);
+      }
+
+      .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 19px;
+        padding-top: 38px;
+      }
+
+      .site-nav {
+        width: 100%;
+        gap: 18px;
+        overflow-x: auto;
+      }
+
+      main {
+        padding-bottom: 50px;
+      }
+
+      section {
+        padding-top: 31px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
   </style>
 </head>
+
 <body>
   <div class="page">
+
     <header class="site-header">
       <div class="identity">
         <h1>JinLong Yang</h1>
         <p>Sichuan University · Software Engineering</p>
       </div>
+
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#bio">Bio</a>
         <a href="#publications">Publications</a>
@@ -156,71 +277,183 @@
     </header>
 
     <main>
+
+      <!-- ================= BIO ================= -->
+
       <section id="bio" class="bio">
         <h2>Bio</h2>
+
         <p>
           I am a fourth-year undergraduate student in Software Engineering at
           <strong>Sichuan University</strong>. My research focuses on
           <strong>efficient generation with diffusion models</strong> and
           <strong>long video generation</strong>.
         </p>
+
         <p>
           I am particularly interested in understanding and accelerating the
           feature dynamics of Diffusion Transformers, with the goal of making
           high-quality image and video generation substantially more efficient.
         </p>
+
         <div class="contact-links" aria-label="Contact links">
           <a href="mailto:2023141461083@stu.scu.edu.cn">Email</a>
           <a href="https://github.com/youngkinlon" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </section>
 
+
+      <!-- ================= PUBLICATIONS ================= -->
+
       <section id="publications">
         <h2>Publications</h2>
+
         <div class="paper-list">
+
+          <!-- BRACE -->
+
           <article class="paper publication">
-            <h3 class="paper-title">BRACE: Taming Sharp Irregularities via Barycentric Rational Forecasting for Fast DiT Inference</h3>
-            <p class="paper-authors"><strong>JinLong Yang</strong> et al.</p>
-            <p class="paper-venue">ACM Multimedia (ACM MM), 2026</p>
-            <p class="paper-summary">A training-free acceleration framework that combines local trajectory modeling, barycentric rational extrapolation, and adaptive Chebyshev weighting for efficient DiT inference.</p>
+
+            <h3 class="paper-title">
+              BRACE: Taming Sharp Irregularities via Barycentric Rational Forecasting for Fast DiT Inference
+            </h3>
+
+            <p class="paper-authors">
+              <strong>JinLong Yang</strong> et al.
+            </p>
+
+            <p class="paper-venue">
+              ACM Multimedia (ACM MM), 2026
+            </p>
+
+            <p class="paper-summary">
+              A training-free acceleration framework that combines local
+              trajectory modeling, barycentric rational extrapolation,
+              and adaptive Chebyshev weighting for efficient DiT inference.
+            </p>
+
             <div class="paper-links">
-              <a href="https://youngkinlon.github.io/BRACE-Taming-Sharp-Irregularities-via-Barycentric-Rational-Forecasting-for-Fast-DiT-Inference/" target="_blank" rel="noreferrer">Project page</a>
+              <a
+                href="https://youngkinlon.github.io/BRACE-Taming-Sharp-Irregularities-via-Barycentric-Rational-Forecasting-for-Fast-DiT-Inference/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Project page
+              </a>
             </div>
+
           </article>
+
+
+          <!-- FADE: NeurIPS 2026 -->
+
+          <article class="paper publication">
+
+            <h3 class="paper-title">
+              FADE: Fractional Anomalous Dynamics Extrapolation for Diffusion Transformers Acceleration
+            </h3>
+
+            <p class="paper-authors">
+              <strong>JinLong Yang</strong> et al.
+            </p>
+
+            <p class="paper-venue">
+              NeurIPS 2026
+            </p>
+
+            <p class="paper-summary">
+              Models DiT latent trajectories with fractional dynamics
+              and uses a lightweight lookup strategy for adaptive,
+              zero-overhead extrapolation.
+            </p>
+
+          </article>
+
         </div>
       </section>
+
+
+      <!-- ================= UNDER REVIEW ================= -->
 
       <section id="under-review">
         <h2>Under Review</h2>
+
         <div class="paper-list">
-          <article class="paper">
-            <h3 class="paper-title">LaBACK: Laurent-Guided Backtracking for Training-Free Flow Matching Acceleration <span class="status">Under review</span></h3>
-            <p class="paper-authors"><strong>JinLong Yang</strong> et al.</p>
-            <p class="paper-summary">A training-free framework that contracts cache-driven updates and applies Laurent-guided forecasting with negative-power correction, delivering consistent speed–quality gains for text-to-image, distilled, and text-to-video generation without extra model evaluations.</p>
-          </article>
+
+          <!-- LaBACK -->
 
           <article class="paper">
-            <h3 class="paper-title">FADE: Fractional Anomalous Dynamics Extrapolation for Diffusion Transformers Acceleration <span class="status">Under review</span></h3>
-            <p class="paper-authors"><strong>JinLong Yang</strong> et al.</p>
-            <p class="paper-summary">Models DiT latent trajectories with fractional dynamics and uses a lightweight lookup strategy for adaptive, zero-overhead extrapolation.</p>
+
+            <h3 class="paper-title">
+              LaBACK: Laurent-Guided Backtracking for Training-Free Flow Matching Acceleration
+              <span class="status">Under review</span>
+            </h3>
+
+            <p class="paper-authors">
+              <strong>JinLong Yang</strong> et al.
+            </p>
+
+            <p class="paper-summary">
+              A training-free framework that contracts cache-driven updates
+              and applies Laurent-guided forecasting with negative-power correction,
+              delivering consistent speed–quality gains for text-to-image,
+              distilled, and text-to-video generation without extra model evaluations.
+            </p>
+
           </article>
 
-          <article class="paper">
-            <h3 class="paper-title">HDS: Heterogeneity-Driven Safeguarding for Structure-Aware DiT Acceleration <span class="status">Under review</span></h3>
-            <p class="paper-authors"><strong>JinLong Yang</strong> et al.</p>
-            <p class="paper-summary">Profiles inter-layer sensitivity online to safeguard vulnerable layers while accelerating robust ones in Diffusion Transformers.</p>
-          </article>
+
+          <!-- HDS -->
 
           <article class="paper">
-            <h3 class="paper-title">GRAD-RIR: Topology-Aware Graph-Conditioned Diffusion Model for Sparse RIR Prediction <span class="status">Under review</span></h3>
-            <p class="paper-authors"><strong>JinLong Yang</strong> et al.</p>
-            <p class="paper-summary">A graph-conditioned diffusion approach for reconstructing room impulse responses from sparse measurements under geometric occlusion and strong spatial variation.</p>
+
+            <h3 class="paper-title">
+              HDS: Heterogeneity-Driven Safeguarding for Structure-Aware DiT Acceleration
+              <span class="status">Under review</span>
+            </h3>
+
+            <p class="paper-authors">
+              <strong>JinLong Yang</strong> et al.
+            </p>
+
+            <p class="paper-summary">
+              Profiles inter-layer sensitivity online to safeguard vulnerable
+              layers while accelerating robust ones in Diffusion Transformers.
+            </p>
+
           </article>
+
+
+          <!-- GRAD-RIR -->
+
+          <article class="paper">
+
+            <h3 class="paper-title">
+              GRAD-RIR: Topology-Aware Graph-Conditioned Diffusion Model for Sparse RIR Prediction
+              <span class="status">Under review</span>
+            </h3>
+
+            <p class="paper-authors">
+              <strong>JinLong Yang</strong> et al.
+            </p>
+
+            <p class="paper-summary">
+              A graph-conditioned diffusion approach for reconstructing
+              room impulse responses from sparse measurements under
+              geometric occlusion and strong spatial variation.
+            </p>
+
+          </article>
+
         </div>
       </section>
+
     </main>
 
-    <footer>© 2026 JinLong Yang</footer>
+    <footer>
+      © 2026 JinLong Yang
+    </footer>
+
   </div>
 </body>
 </html>
