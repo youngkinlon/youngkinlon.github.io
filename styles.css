@@ -223,8 +223,8 @@ h2 {
   color: var(--muted);
 }
 
-.reading-empty:not(:only-child) {
-  display: none;
+.reading-notes a {
+  overflow-wrap: anywhere;
 }
 
 footer {

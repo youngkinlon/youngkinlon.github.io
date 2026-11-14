@@ -1,0 +1,3 @@
+# Track only the Obsidian note intended for the public reading page.
+/reading_list/*
+!/reading_list/Reading_list.md
